@@ -1,0 +1,10 @@
+.overlay-text {
+  font-weight: 700;
+  font-size: 120px;
+  color: var(--overlay-text-color);
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}

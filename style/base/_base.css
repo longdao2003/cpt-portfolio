@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-inter);
+  color: var(--text-color);
+}
+body {
+  background-color: var(--bg-color);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1 {
+  line-height: 1.2;
+  font-weight: 700;
+}
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+h6 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+h5 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+span {
+  color: var(--hightlight-color);
+  line-height: 1.2;
+}
+button {
+  border: none;
+}
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-position: center center;
+  object-fit: cover;
+}
+section {
+  margin-bottom: 210px;
+}
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "•";
+  background: var(--primary-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 8px;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+ul li {
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+@meda (max-width: 768px) {
+  section {
+    margin-bottom: 64px;
+  }
+}

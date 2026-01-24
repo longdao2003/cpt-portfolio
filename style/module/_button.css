@@ -1,0 +1,43 @@
+.contact-us-btn {
+  padding: 8px 24px;
+  border-radius: 8px;
+  position: relative;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+.contact-us-btn::before {
+  content: "";
+  position: absolute;
+  border-radius: 8px;
+  padding: 2px;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  inset: 0;
+  z-index: 1;
+}
+
+.contact-us-btn::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius: 7px;
+  background: var(--accent-color);
+  backdrop-filter: blur(230px);
+  z-index: -1;
+}
+.download-cv-button {
+  padding: 12px 24px;
+  background-image: var(--primary-color);
+  border-radius: 8px;
+}

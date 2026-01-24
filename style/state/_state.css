@@ -1,0 +1,12 @@
+.is-hidden {
+  display: none !important;
+}
+.l-header.scrolled {
+  background: var(--accent-color);
+}
+.l-header:has(.mobile-menu-dropdown.is-active) {
+  background: black;
+}
+.l-header .mobile-menu-dropdown.is-active {
+  opacity: 1;
+}

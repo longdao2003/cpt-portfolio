@@ -1,0 +1,13 @@
+:root {
+  --bg-color: #010101;
+  --text-color: #ffffff;
+  --primary-color: linear-gradient(180deg, #ff7333 0%, #f52f12 100%);
+  --secondary-color: #ffffff;
+  --accent-color: linear-gradient(
+    120.12deg,
+    rgba(82, 82, 82, 0.2) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  --hightlight-color: #a3a3a3;
+  --overlay-text-color: #5c5c5c;
+}

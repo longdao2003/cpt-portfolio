@@ -1,0 +1,82 @@
+.l-main .about-me .container {
+  position: relative;
+}
+
+.l-main .about-me .main {
+  display: flex;
+  gap: 100px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  align-items: flex-end;
+}
+.l-main .about-me .trigger {
+  width: 306px;
+  height: 458px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: opacity 0.3s ease-out;
+}
+.l-main .about-me .information {
+  flex: 1;
+}
+
+.l-main .about-me .avatar {
+  width: 600px;
+  height: 850px;
+}
+
+.l-main .about-me .main .information {
+  margin-bottom: 55px;
+}
+.l-main .about-me .main .information h5 {
+  margin-top: 40px;
+  margin-bottom: 32px;
+}
+.l-main .about-me .skill-section {
+  display: flex;
+  justify-content: space-between;
+}
+.l-main .tech-skill {
+  display: flex;
+  flex-wrap: wrap;
+  width: 392px;
+  gap: 48px;
+}
+.l-main .tech-skill .box {
+  background-image: var(--accent-color);
+  border: 1px solid #ffffff1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  width: 60px;
+  height: 60px;
+}
+.l-main .tech-skill-card {
+  display: flex;
+  gap: 12px;
+  width: 172px;
+}
+
+.l-main .card-info {
+  width: 100px;
+}
+.l-main .card-info p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.l-main .card-info p:last-child {
+  font-size: 10px;
+  line-height: 1.2;
+  color: #ffffff;
+  opacity: 0.6;
+  font-weight: 400;
+}
+.l-main .overlay-text {
+  font-size: 120px;
+  color: var(--overlay-text-color);
+  left: 55%;
+  z-index: 4;
+}
