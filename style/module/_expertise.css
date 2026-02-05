@@ -1,0 +1,68 @@
+.expertise h3 {
+  text-align: center;
+  transform: none !important;
+}
+.expertise .card {
+  padding: 40px;
+  flex: 1;
+  border-radius: 12px;
+}
+.expertise .card > .image {
+  width: 100%;
+}
+.expertise .card.image-card {
+  padding: 0px;
+}
+.expertise h4 {
+  margin-top: 20px;
+}
+.expertise p {
+  margin-top: 8px;
+  font-weight: 700;
+}
+.expertise .info {
+  display: flex;
+  gap: 32px;
+}
+.expertise .certificate {
+  flex: 1;
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.expertise .certificate-image {
+  display: flex;
+  gap: 32px;
+}
+.expertise .card.image-card .image {
+  width: 306px;
+  height: 266px;
+}
+.expertise .certificate .card h4 {
+  margin-top: 0;
+}
+@media (max-width: 480px) {
+  .expertise .info {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .expertise .card {
+    padding: 20px;
+  }
+  .expertise .info .card .image {
+    height: 152px;
+  }
+  .expertise h4 {
+    font-size: 20px;
+    margin-top: 16px;
+  }
+  .expertise .certificate,
+  .expertise .certificate-image {
+    gap: 12px;
+  }
+  .expertise .certificate-image .card .image {
+    aspect-ratio: 166/144;
+    height: auto;
+    width: calc((100vw - 32px) / 2);
+  }
+}

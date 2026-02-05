@@ -1,0 +1,111 @@
+#accordion .title {
+  display: flex;
+
+  flex: 1;
+  align-items: center;
+}
+#accordion .title > .index {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-right: 80px;
+}
+#accordion .title > .index::before {
+  content: "/";
+  background-image: var(--primary-color);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#accordion .icon-wrapper {
+}
+#accordion .icon-wrapper span {
+  filter: invert(1);
+}
+.ui-accordion .ui-accordion-content {
+  background: var(--bg-color);
+}
+#accordion .ac {
+  border: none;
+  border-bottom: 1px solid #999999;
+}
+#accordion .content {
+  justify-content: space-between;
+
+  padding: 24px 140.5px 64px !important;
+
+  background-color: var(--bg-color);
+}
+#accordion .content .main {
+  display: flex;
+}
+#accordion .content .info {
+  max-width: 564px;
+  flex: 1;
+}
+#accordion .content .image {
+  width: 417px;
+  height: 245px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+.ui-accordion .ui-accordion-content {
+}
+.ui-accordion .ui-accordion-header {
+  background: var(--bg-color);
+}
+#accordion .ac-trigger {
+  background: var(--bg-color);
+  padding: 64px 32px;
+}
+#accordion .ac > .ac-header .ac-trigger::after {
+  width: 40px;
+  height: 40px;
+  background-image: var(--accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  color: var(--text-color);
+}
+@media (max-width: 480px) {
+  #accordion .ac > .ac-header .index,
+  #accordion .ac > .ac-header h5 {
+    font-size: 14px;
+  }
+  #accordion .ac > .ac-header .index {
+    margin-right: 12px;
+  }
+  #accordion .ac > .ac-header .ac-trigger::after {
+    width: 24px;
+    height: 24px;
+  }
+  #accordion .content {
+    padding: 6px 30px 12px 30px !important;
+  }
+  #accordion .content .main {
+    gap: 24px;
+  }
+  #accordion .content .image {
+    width: 117px;
+    height: 68px;
+    border-radius: 5px;
+  }
+  #accordion .tag-list {
+    display: none;
+  }
+  #accordion .tag-list.mobile {
+    display: flex;
+    margin-top: 8px;
+  }
+  #accordion .ac-trigger {
+    background: var(--bg-color);
+    padding: 12px 0 8px 0;
+  }
+  #accordion .ui-accordion .ui-accordion-content {
+    padding-bottom: 12px;
+  }
+  #accordion .ac {
+    margin: 0;
+  }
+}

@@ -1,6 +1,8 @@
 export default function initExperience() {
-  $("#accordion").accordion({
-    icons: { header: "ui-icon-plus", activeHeader: "ui-icon-minus" },
-    header: ".acc-header",
+  const acc = new Accordion(".accordion-container", {
+    onOpen: function (currentElement) {
+      console.log(currentElement);
+    },
   });
+  acc.open(0);
 }

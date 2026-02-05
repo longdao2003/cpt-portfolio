@@ -1,0 +1,27 @@
+#card-track {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+#card-track .card-track-wrapper {
+  display: flex;
+  gap: 32px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  user-select: none;
+}
+@media (max-width: 480px) {
+  #card-track {
+    position: static !important;
+    height: auto;
+    overflow: hidden;
+    width: 100% !important;
+  }
+  #card-track .card-track-wrapper {
+    position: static !important;
+    flex-direction: column;
+    transform: none !important;
+    gap: 24px;
+  }
+}

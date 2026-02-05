@@ -1,0 +1,20 @@
+.tag-list {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+}
+.tag {
+  color: var(--text-color);
+  padding: 4px 16px;
+  border: 1px solid #a3a3a3;
+  border-radius: 1000px;
+}
+@media (max-width: 480px) {
+  .tag-list {
+    flex-wrap: wrap;
+  }
+  .tag {
+    font-size: 10px !important;
+    white-space: nowrap;
+  }
+}

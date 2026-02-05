@@ -36,8 +36,11 @@
   backdrop-filter: blur(230px);
   z-index: -1;
 }
-.download-cv-button {
-  padding: 12px 24px;
+.gradient-button {
   background-image: var(--primary-color);
   border-radius: 8px;
+  width: 147px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 16px;
 }

@@ -10,3 +10,12 @@
 .l-header .mobile-menu-dropdown.is-active {
   opacity: 1;
 }
+
+.mobile {
+  display: none;
+}
+@media (max-width: 480px) {
+  .mobile {
+    display: block;
+  }
+}

@@ -58,8 +58,8 @@
   .l-header {
     background: var(--accent-color);
     display: grid;
-    grid-template-rows: 102px;
-    transition: grid-template-rows 0.3s ease-out-out;
+    grid-template-rows: 80px;
+    transition: grid-template-rows 0.3s ease-out;
     overflow: hidden;
   }
   .l-header .mobile-menu-dropdown {
