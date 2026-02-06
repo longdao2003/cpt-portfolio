@@ -79,7 +79,7 @@
   color: var(--overlay-text-color);
   left: 55%;
   z-index: 4;
-  opacity: 0.5;
+  /* opacity: 0.5; */
 }
 .l-main .about-me .mb-skill-section-wrapper {
   display: none;
