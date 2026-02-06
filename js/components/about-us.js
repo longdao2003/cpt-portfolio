@@ -6,7 +6,10 @@ export default function initAboutUs() {
     const windowBottom = $(window).scrollTop() + $(window).height();
     if (mainBottom <= windowBottom) {
       $main.css("opacity", "1");
-      $trigger.css("opacity", "0");
+      $trigger.css({
+        opacity: "0",
+        transform: "translateX(50vw) translateY(-50vh)",
+      });
     }
   });
 }

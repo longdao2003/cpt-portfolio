@@ -52,6 +52,10 @@
   justify-content: space-between;
   padding: 5px 0;
 }
+.card .content svg path,
+.card .content svg circle {
+  stroke: #ff4500;
+}
 @media (max-width: 480px) {
   .card .image {
     width: 100%;

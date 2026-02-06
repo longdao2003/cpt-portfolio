@@ -4,6 +4,7 @@
   left: 0;
   width: 100%;
   z-index: 1000;
+  backdrop-filter: blur(32px);
 }
 
 .l-header .container {
