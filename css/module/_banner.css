@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  opacity: 0;
 }
 .l-main .banner video {
   position: absolute;

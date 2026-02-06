@@ -9,10 +9,13 @@ export default function initBanner() {
     },
   );
 
-  tl.to(".banner .overlay", {
-    opacity: 0,
-    delay: 0.3,
+  tl.to(".banner", {
+    opacity: 1,
   })
+    .to(".banner .overlay", {
+      opacity: 0,
+      delay: 0.3,
+    })
     .to(".banner .hero-title", {
       opacity: 1,
       y: 0,
