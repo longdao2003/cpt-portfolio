@@ -1,29 +1,36 @@
 .l-main .banner {
   height: 100vh;
-  background-image: url("../../image/banner.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
-
+.l-main .banner video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+}
 .l-main .banner .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  position: relative;
   align-items: center;
   height: 95%;
+  z-index: 3;
 }
 .l-main .banner .hero-title {
-  font-size: min(220px, calc(17vw));
+  font-size: min(242px, calc(17vw));
   color: var(--text-color);
   cursor: default;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  flex: 1;
   display: flex;
   align-items: center;
+  margin: 164px 0 105px;
 }
 .l-main .banner .hero-info {
   align-self: flex-start;
@@ -68,7 +75,7 @@
   .l-main .banner .hero-title {
     height: fit-content;
     flex: 0;
-    margin-top: 145px;
+    margin: 145px 0 0;
   }
   .l-main .banner .container {
     justify-content: flex-start;
@@ -92,5 +99,8 @@
   }
   .l-main .banner .social-media {
     display: none;
+  }
+  .l-main .banner video {
+    top: 80px;
   }
 }

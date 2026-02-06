@@ -38,6 +38,7 @@
 }
 #accordion .content .main {
   display: flex;
+  gap: 100px;
 }
 #accordion .content .info {
   max-width: 564px;

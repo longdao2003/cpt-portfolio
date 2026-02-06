@@ -21,19 +21,21 @@
   text-align: center;
   margin-bottom: 40px;
 }
+.main-title .subtitle-group {
+  overflow: hidden;
+}
 .main-title .overlay-text {
   width: 100%;
   font-size: 180px;
   left: 0;
-  transform: none;
+
   transform: translateY(-50%);
   z-index: -1;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 .main-title h3,
 .main-title h2 {
   text-align: center;
-  overflow: hidden;
 }
 .main-title h3:nth-of-type(odd) {
   transform: translateX(-12%);
@@ -46,12 +48,13 @@
   .main-title .overlay-text {
     width: 100%;
     font-size: clamp(35px, calc(35px + (100vw - 300px) * 0.125), 50px);
+    transform: translateY(-40px);
   }
   .main-title h3:nth-of-type(even) {
-    transform: translateY(12px) translateX(10%);
+    transform: translateX(10%);
   }
   .main-title h3:nth-of-type(odd) {
-    transform: translateY(12px) translateX(-10%);
+    transform: translateX(-10%);
   }
   .main-title {
     margin-bottom: 32px;

@@ -48,7 +48,7 @@
   width: 20px;
   height: 2px;
   cursor: pointer;
-  transition: transform 0.3s ease-out-out;
+  transition: transform 0.5s ease-out-out;
 }
 .l-header .header-logo {
   width: 108px;
@@ -59,7 +59,7 @@
     background: var(--accent-color);
     display: grid;
     grid-template-rows: 80px;
-    transition: grid-template-rows 0.3s ease-out;
+    transition: grid-template-rows 0.5s ease-out;
     overflow: hidden;
   }
   .l-header .mobile-menu-dropdown {

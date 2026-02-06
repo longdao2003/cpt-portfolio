@@ -4,11 +4,10 @@ export default function initProject() {
   const $cardTrack = $track.parent();
   const trackElement = $track[0];
 
-  // lấy padding trái + phải của container
-  const totalPadding = parseFloat($container.css("padding-left")) || 0;
-
+  const totalPadding = $cardTrack.offset().left;
+  console.log(totalPadding);
   // set width cho cardTrack = 100vw - padding
-  $cardTrack.css("width", `calc(100vw - ${totalPadding}px)`);
+  $cardTrack.css("width", `calc(100% + ${totalPadding}px)`);
 
   // Event: Mouse Down
   $(window).on("mousedown", (e) => {
