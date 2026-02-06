@@ -87,6 +87,9 @@
 .l-main .about-me .tech-mobile {
   display: none;
 }
+.l-main .about-me span {
+  font-weight: 300;
+}
 @media (max-width: 480px) {
   .l-main .about-me .trigger {
     display: none;

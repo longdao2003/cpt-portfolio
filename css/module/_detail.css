@@ -1,0 +1,69 @@
+.l-main .detail {
+  margin-top: 160px;
+}
+
+.l-main .detail .thumbnail {
+  width: 100%;
+  aspect-ratio: 1320/720;
+  border-radius: 20px;
+  margin-bottom: 64px;
+}
+.l-main .detail .introduction {
+  margin-bottom: 64px;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+.l-main .detail .list-box {
+  display: flex;
+  width: 483px;
+  justify-content: space-between;
+}
+.l-main .detail .box {
+  border-left: 1.5px solid #999;
+  padding-left: 10px;
+  width: 123px;
+}
+.l-main .detail .box p {
+  margin-top: 12px;
+  font-weight: 700;
+}
+.l-main .detail .list-product-image {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.l-main .detail .list-product-image .image {
+  flex: 1;
+  height: 263px;
+  border-radius: 20px;
+}
+.l-main .detail .information-detail {
+  display: flex;
+  gap: 64px;
+  justify-content: space-between;
+}
+.l-main .detail .information-detail > * {
+  flex: 1;
+}
+.l-main .detail .information-detail > .image {
+  min-height: 344px;
+  height: 100%;
+  border-radius: 20px;
+}
+.l-main .detail .information-detail .content {
+  display: flex;
+  align-items: center;
+}
+.l-main .detail .information-detail .content .content-wraper {
+  height: fit-content;
+}
+.l-main .detail .information-detail .content .content-wraper > * {
+  margin-bottom: 24px;
+}
+.l-main .detail .information-detail .content ul li {
+  margin: 0;
+}
+.l-main .detail .information-detail .content h6 {
+  font-size: 32px;
+}

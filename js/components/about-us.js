@@ -1,4 +1,8 @@
 export default function initAboutUs() {
+  var $aboutMe = $(".about-me");
+  if ($aboutMe.length === 0) {
+    return;
+  }
   const $trigger = $(".about-me .trigger");
   const $main = $(".about-me .main");
   const mainBottom = $main.offset().top + $main.outerHeight();

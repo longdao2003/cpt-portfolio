@@ -1,5 +1,9 @@
 export default function initMainTitle() {
-  $(".subtitle-group").each(function (index, element) {
+  const $subtitleGroups = $(".subtitle-group");
+
+  if (!$subtitleGroups.length) return;
+
+  $subtitleGroups.each(function (index, element) {
     const children = $(element).children();
 
     children.each(function (childIndex) {
