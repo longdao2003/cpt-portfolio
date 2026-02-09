@@ -5,6 +5,7 @@ export default function initBanner() {
   if ($banner.length === 0) {
     return;
   }
+
   gsap.set(
     ".banner .hero-title,.banner .hero-info > p,.banner .gradient-button,.banner .social-media",
     {
