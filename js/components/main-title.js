@@ -1,4 +1,5 @@
 export default function initMainTitle() {
+  if (window.innerWidth < 460) return;
   const $subtitleGroups = $(".subtitle-group");
 
   if (!$subtitleGroups.length) return;

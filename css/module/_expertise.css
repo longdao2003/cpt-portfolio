@@ -20,6 +20,9 @@
   margin-top: 8px;
   font-weight: 700;
 }
+  .expertise .card span{
+    font-weight: 300;
+  }
 .expertise .info {
   display: flex;
   gap: 32px;

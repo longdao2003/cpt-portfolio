@@ -76,10 +76,10 @@
 }
 .l-main .overlay-text {
   font-size: 120px;
-  color: var(--overlay-text-color);
+  color: #5c5c5c;
   left: 55%;
   z-index: 4;
-  /* opacity: 0.5; */
+  opacity: 0.5 !important;
 }
 .l-main .about-me .mb-skill-section-wrapper {
   display: none;
@@ -149,5 +149,8 @@
   }
   .l-main .card-info p {
     font-size: 16px;
+  }
+  .l-main .banner .video-overlay {
+    display: none;
   }
 }
