@@ -3,12 +3,18 @@ export default function initAboutUs() {
   if ($aboutMe.length === 0) {
     return;
   }
+
   const $trigger = $(".about-me .trigger");
   const $main = $(".about-me .main");
-  const mainBottom = $main.offset().top + $main.outerHeight();
+
   $(window).on("scroll", function () {
     const windowBottom = $(window).scrollTop() + $(window).height();
-    if (mainBottom <= windowBottom) {
+
+    const triggerTop = $trigger.offset().top;
+    const triggerHeight = $trigger.outerHeight();
+    const triggerOneThird = triggerTop + triggerHeight / 6;
+
+    if (windowBottom >= triggerOneThird) {
       $main.css("opacity", "1");
       $trigger.css({
         opacity: "0",
